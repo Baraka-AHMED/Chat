@@ -8,29 +8,27 @@
 		<meta name="description" content="Chat test">
 		<meta name="keyword" content="chat discussion">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="" type="image/x-icon">
 		<script src="https://kit.fontawesome.com/b18ab37082.js" crossorigin="anonymous"></script>
 		<script src="js/chat.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 		<title>Chat</title>
 	</head>
 
 	<body>
-		
-		<button id="mssg"  onclick="openclose('chat');"><i class="fas fa-comment-dots"></i> </button>
+		<button id="msgbutton"  onclick="openclose();"><i class="fas fa-comment-dots"></i> </button>
 		<div id="chat">
-	
-<div class="messagepost">
+			<div class="contact"> 
+				<p id="p1">Nom Prénom</p> 
+			</div>
+			<div class="messagepost">
 
-
-<div class="msgBar">
-  <input type="text" autocomplete="off" name="entry" value="" placeholder="Your message here...">
-  <button id="send" type="button">Send</button>
-</div>
-</div>
-</div>
-
-
-
-
+			</div>
+			<div class="msgBar">
+				<textarea name="message" id="zonedetexte" cols="17" rows="3" placeholder="Ecrivez votre message..."></textarea>
+  				<!-- <input type="text" autocomplete="on" name="entry" value="" placeholder="Your message here...">--> 
+  				<button id="send" type="button" onclick="post();" ><i class="fas fa-paper-plane"></i></button>
+  
+			</div>
+		</div>
 	</body>
 </html>
